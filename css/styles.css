@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 680px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav-right{
+        margin: auto;
+        padding: 10px ;
+    }
+    
+    header img {
+        margin: auto;
+        width: auto;
+    }
+
+    .nav-left a{
+        margin: auto;
+        width: auto;
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -55,17 +76,21 @@ header .nav-left .button-left {
     font-size: 14px;
 }
 
-.jumbotron {
+#jumbotron {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-left: 200px;
     gap: 30px;
-    width: 500px;
-    margin-top: 300px;
+    margin-top: 100px;
 }
 
-.jumbotron .content h1 {
+#jumbotron .content {
+    margin-right: 300px;
+    width: 500px;
+}
+
+#jumbotron .content h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -73,12 +98,12 @@ header .nav-left .button-left {
     line-height: 98px;
 }
 
-.jumbotron .content p {
+#jumbotron .content p {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
 
-.jumbotron .content a {
+#jumbotron .content a {
     display: flex;
     justify-content: space-around;
     font-family: 'Inter', sans-serif;
@@ -90,4 +115,28 @@ header .nav-left .button-left {
     max-width: 140px;
     color: #000000;
     text-decoration: none;
+}
+
+#jumbotron .img-jumb img {
+    width: 600px;
+    height: 420px;
+}
+
+.why-w {
+    margin-top: 50px;
+}
+
+.why-w .motives h2 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.why-w .motives p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    margin: 10px 200px;
 }

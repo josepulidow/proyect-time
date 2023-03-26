@@ -1,4 +1,4 @@
--m <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -31,16 +32,105 @@
   </header>
 
   <main>
-    <div class="jumbotron">
+    <div id="jumbotron">
       <div class="content">
         <h1>El tiempo es nuestro</h1>
         <p>Sabemos que el tiempo para ti es oro, por eso aquí encontraras los mejores relojes para disfrutar cada
           minuto.</p>
         <a href="">Ver Catalogo</a>
       </div>
+      <div class="img-jumb">
+        <img src="./assets/jum-img.jpg" alt="">
+      </div>
+    </div>
+    </div>
 
+    <div class="why-w">
+      <div class="motives">
+        <h2>Why should you buy with us?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla earum magnam? Delectus nulla
+          voluptates
+          fuga cupiditate maiores eius saepe numquam inventore. Quae consequuntur tempora ab maiores? Dolor, libero
+          sint.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-3 min-[320px]:grid-cols-1 m-8">
+        <div class="m-6 p-3.5">
+          <img src="./assets/fast.png" alt="" height="32px" width="32px" class="mx-auto">
+          <h5 class="text-center font-mono text-2xl font-semibold">Fast delivery</h5>
+          <p class="text-center text-base font-normal">The fastest delivery every day</p>
+        </div>
+        <div class="m-6 p-3.5">
+          <img src="./assets/support.png" alt="" height="32px" width="32px" class="mx-auto">
+          <h5 class="text-center font-mono text-2xl font-semibold">24/7 support</h5>
+          <p class="text-center text-base font-normal">Any questions or problems? call us</p>
+        </div>
+        <div class="m-6 p-3.5">
+          <img src="./assets/quality.png" alt="" height="32px" width="32px" class="mx-auto">
+          <h5 class="text-center font-mono text-2xl font-semibold">Quality</h5>
+          <p class="text-center text-base font-normal">The best products with the best quality</p>
+        </div>
+        <div class="m-6 p-3.5">
+          <img src="./assets/products.png" alt="" height="32px" width="32px" class="mx-auto">
+          <h5 class="text-center font-mono text-2xl font-semibold">A lot of products</h5>
+          <p class="text-center text-base font-normal">Looking for something special? We have it!</p>
+        </div>
+        <div class="m-6 p-3.5">
+          <img src="./assets/quality-s.png" alt="" height="32px" width="32px" class="mx-auto">
+          <h5 class="text-center font-mono text-2xl font-semibold">Quality service</h5>
+          <p class="text-center text-base font-normal">The best customer service</p>
+        </div>
+        <div class="m-6 p-3.5">
+          <img src="./assets/world.png" alt="" height="32px" width="32px" class="mx-auto">
+          <h5 class="text-center font-mono text-2xl font-semibold">Worldwide presence</h5>
+          <p class="text-center text-base font-normal">You are at the other side of the world? we come to your house</p>
+        </div>
+      </div>
     </div>
-    </div>
+    <h2 class="text-center text-5xl font-black font-sans m-auto">Top watches</h2>
+    <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-3 min-[320px]:grid-cols-1 m-auto w-4/5">
+      <div class="mt-20 p-3.5 w-auto h-96">
+        <div class="bg-cyan-100">
+          <img src="./assets/cartier.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
+        </div>
+        <h5 class="font-mono text-2xl font-semibold">Fast delivery</h5>
+        <p class="text-base font-">The fastest delivery every day</p>
+      </div>
+      <div class="mt-20 p-3.5 w-auto h-96">
+        <div class="bg-teal-100">
+          <img src="./assets/longines.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
+        </div>
+        <h5 class="font-mono text-2xl font-semibold">24/7 support</h5>
+        <p class="text-base font-normal">Any questions or problems? call us</p>
+      </div>
+      <div class="mt-20 p-3.5 w-auto h-96">
+        <div class="bg-emerald-100">
+          <img src="./assets/omega.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
+        </div>
+        <h5 class="font-mono text-2xl font-semibold">Quality</h5>
+        <p class="text-base font-normal">The best products with the best quality</p>
+      </div>
+      <div class="mt-20 p-3.5 w-auto h-96">
+        <div class="bg-emerald-100">
+          <img src="./assets/patek.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
+        </div>
+        <h5 class="font-mono text-2xl font-semibold">A lot of products</h5>
+        <p class="text-base font-normal">Looking for something special? We have it!</p>
+      </div>
+      <div class="mt-20 p-3.5 w-auto h-96">
+        <div class="bg-red-100">
+          <img src="./assets/rolex.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
+        </div>
+        <h5 class="font-mono text-2xl font-semibold">Quality service</h5>
+        <p class="text-base font-normal">The best customer service</p>
+      </div>
+      <div class="mt-20 p-3.5 w-auto h-96">
+        <div class="bg-cyan-100">
+          <img src="./assets/tissot.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
+        </div>
+        <h5 class="font-mono text-2xl font-semibold">Worldwide presence</h5>
+        <p class="text-base font-normal">You are at the other side of the world? we come to your house</p>
+      </div>
   </main>
 </body>
 
