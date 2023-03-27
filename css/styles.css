@@ -1,9 +1,12 @@
+/* Se formatearon los estilos para que un futuro no existan problemas */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Se crearon los mediaqueryes lo cual hizo responsive el header y el jumbotron antes de tailwind 
+este es para pantallas medianas*/
 @media (max-width: 940px) {
 
     #jumbotron .content {
@@ -26,6 +29,8 @@
     }
 }
 
+/* Se crearon los mediaqueryes lo cual hizo responsive el header y el jumbotron antes de tailwind
+este es para dispositivos moviles*/
 @media (max-width: 680px) {
     header {
         flex-direction: column;
@@ -68,6 +73,7 @@
     }
 }
 
+/* Se usaron las propiedades de flex en el header para así aliniarlo y poder hacerlo responsive */
 header {
     display: flex;
     justify-content: space-between;
@@ -87,6 +93,7 @@ header .nav-right a {
     font-size: 14px;
 }
 
+/* Se coloco un hover para que cada que se pase por encima se cambie de color */
 header .nav-right a:hover {
     background-color: #3fa0ca;
     border-radius: 15px;
@@ -114,6 +121,7 @@ header .nav-left .button-right {
     font-size: 14px;
 }
 
+/* Se coloco un hover para que cada que se pase por encima se cambie de color */
 header .nav-left .button-right:hover {
     background-color: #FFE3C1;
     border: solid 1px #FFE3C1;
@@ -131,12 +139,14 @@ header .nav-left .button-left {
     font-size: 14px;
 }
 
+/* Se coloco un hover para que cada que se pase por encima se cambie de color */
 header .nav-left .button-left:hover {
     background-color: #FFE3C1;
     border: solid 1px #FFE3C1;
     color: black;
 }
 
+/* Al igual que el header esta creado con CSS puro, se uso las propiedades de flex para hacerlo responsive */
 #jumbotron {
     display: flex;
     justify-content: space-between;
@@ -189,6 +199,7 @@ header .nav-left .button-left:hover {
     text-decoration: none;
 }
 
+/* Se coloco un hover para que cada que se pase por encima se cambie de color */
 #jumbotron .content button:hover {
     background-color: #3fa0ca;
     color: #ffffff;
@@ -200,6 +211,7 @@ header .nav-left .button-left:hover {
     max-height: 420px;
 }
 
+/* Esto antes de hacer las galerias fue lo ultimo que se realizo con CSS puro */
 .why-w {
     margin-top: 50px;
 }

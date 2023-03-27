@@ -15,15 +15,19 @@
 </head>
 
 <body>
+  <!-- Se creo un header el cual esta dividio en tres partes -->
   <header>
+      <!-- Navegacion principal, conformada de tres enlaces -->
     <nav class="nav-right">
       <a href="">About us</a>
       <a href="">Products</a>
       <a href="">Contact</a>
     </nav>
 
+    <!-- Imagen del logo en el header -->
     <img src="./assets/logo-fav.png" alt="">
 
+    <!-- Enlaces de registro -->
     <nav class="nav-left">
       <a href="" class="button-right">Sign in</a>
       <a href="" class="button-left">Sign up</a>
@@ -32,6 +36,7 @@
   </header>
 
   <main>
+    <!-- Se creo el jumbotron -->
     <div id="jumbotron">
       <div class="content">
         <h1>The time is ours</h1>
@@ -45,6 +50,7 @@
     </div>
     </div>
 
+    <!-- Se creo otra seccion donde se pone algunos motivos el porque comprar con nosotros -->
     <div class="why-w">
       <div class="motives">
         <h2>Why should you buy with us?</h2>
@@ -54,21 +60,24 @@
           sint.
         </p>
       </div>
+
+      <!-- Apartir de aqui los estilos fueron realizados con Tailwind CSS, cada motivo esta conformado por un div el cual contiene una imagen, 
+        un titulo y una paqueña descripcion, es respinsive ya que fue creado con grid -->
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-3 min-[320px]:grid-cols-1 m-8">
         <div class="m-6 p-3.5">
           <img src="./assets/fast.png" alt="" height="32px" width="32px" class="mx-auto">
           <h5 class="text-center font-mono text-2xl font-semibold">Fast delivery</h5>
-          <p class="text-center text-base font-normal">The fastest delivery every day</p>
+          <p class="text-center text-base font-normal">The fastest delivery every day.</p>
         </div>
         <div class="m-6 p-3.5">
           <img src="./assets/support.png" alt="" height="32px" width="32px" class="mx-auto">
           <h5 class="text-center font-mono text-2xl font-semibold">24/7 support</h5>
-          <p class="text-center text-base font-normal">Any questions or problems? call us</p>
+          <p class="text-center text-base font-normal">Any questions or problems? call us.</p>
         </div>
         <div class="m-6 p-3.5">
           <img src="./assets/quality.png" alt="" height="32px" width="32px" class="mx-auto">
           <h5 class="text-center font-mono text-2xl font-semibold">Quality</h5>
-          <p class="text-center text-base font-normal">The best products with the best quality</p>
+          <p class="text-center text-base font-normal">The best products with the best quality.</p>
         </div>
         <div class="m-6 p-3.5">
           <img src="./assets/products.png" alt="" height="32px" width="32px" class="mx-auto">
@@ -78,68 +87,80 @@
         <div class="m-6 p-3.5">
           <img src="./assets/quality-s.png" alt="" height="32px" width="32px" class="mx-auto">
           <h5 class="text-center font-mono text-2xl font-semibold">Quality service</h5>
-          <p class="text-center text-base font-normal">The best customer service</p>
+          <p class="text-center text-base font-normal">The best customer service.</p>
         </div>
         <div class="m-6 p-3.5">
           <img src="./assets/world.png" alt="" height="32px" width="32px" class="mx-auto">
           <h5 class="text-center font-mono text-2xl font-semibold">Worldwide presence</h5>
-          <p class="text-center text-base font-normal">You are at the other side of the world? we come to your house</p>
+          <p class="text-center text-base font-normal">You are at the other side of the world? we come to your house.</p>
         </div>
       </div>
     </div>
+
+    <!-- Aqui se hizo una galeria igual usando el framework de Tailwind CSS, cada Card contiene un div como contenedor el cual se le da un borde
+    como conteneor de la imagen, debajo de las imagenes lleva un titulo, seguido de un parrafo con algo caracteristico de la marca
+    se le asignaron propiedades para que sea responsive -->
     <h2 class="text-center text-5xl font-black font-sans m-auto">Top watches</h2>
     <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-3 min-[320px]:grid-cols-1 m-auto w-4/5">
-      <div class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
+      <!-- Cada Card tiene un efecto hover, esta al pasar el cursor se mueve sobre el eje y para hacer saber en que elemento estan posicionados -->
+      <div
+        class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
         <div class="bg-cyan-100">
           <img src="./assets/cartier.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
         </div>
         <h5 class="font-mono text-2xl font-semibold">Cartier</h5>
         <p class="text-base font-">The Cartier name is synonymous with style.</p>
       </div>
-      <div class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
+      <div
+        class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
         <div class="bg-teal-100">
           <img src="./assets/longines.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
         </div>
         <h5 class="font-mono text-2xl font-semibold">Longines</h5>
         <p class="text-base font-normal">History, elegance and high performance.</p>
       </div>
-      <div class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
+      <div
+        class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
         <div class="bg-emerald-100">
           <img src="./assets/omega.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
         </div>
         <h5 class="font-mono text-2xl font-semibold">Omega</h5>
-        <p class="text-base font-normal">Innovative watchmaking</p>
+        <p class="text-base font-normal">Innovative watchmaking.</p>
       </div>
-      <div class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
+      <div
+        class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
         <div class="bg-emerald-100">
           <img src="./assets/patek.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
         </div>
         <h5 class="font-mono text-2xl font-semibold">Patek Philippe</h5>
-        <p class="text-base font-normal">Perfection in a watch</p>
+        <p class="text-base font-normal">Perfection in a watch.</p>
       </div>
-      <div class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
+      <div
+        class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
         <div class="bg-red-100">
           <img src="./assets/rolex.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
         </div>
         <h5 class="font-mono text-2xl font-semibold">Rolex</h5>
         <p class="text-base font-normal">Prestigious high precision Rolex watches.</p>
       </div>
-      <div class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
+      <div
+        class="mt-20 p-3.5 w-auto h-96 transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110  duration-300">
         <div class="bg-cyan-100">
           <img src="./assets/tissot.jpg" alt="" class="mx-auto pl-3.5 pr-3.5 pt-12 w-64 h-96">
         </div>
         <h5 class="font-mono text-2xl font-semibold">Tissot</h5>
-        <p class="text-base font-normal">Great quality at an affordable price</p>
+        <p class="text-base font-normal">Great quality at an affordable price.</p>
       </div>
   </main>
 
+  <!-- Se creo el footer igual con el framework de Tailwind CSS, el cual esta dividio en cinco columnas y es responsive -->
   <footer class="grid lg:grid-cols-5 sm:grid-cols-5 gap-5 bg-black mt-32 min-[320px]:grid-cols-2">
     <div class="m-auto text-center min-[320px]:m-8">
       <img src="./assets/logo-fav.png" alt="" class="w-20 h-20 mx-auto ">
-      <p class="text-white">&copy;Todos los Derechos Reservados - Emanuel Pulido</p>
+      <p class="text-white">&copy;Todos los Derechos Reservados - Emanuel Pulido.</p>
     </div>
     <div class="m-auto text-center min-[320px]:m-8">
-      <h5 class="text-cyan-100 text-center">Products</h5>
+      <h5 class="text-red-200 text-center">Products</h5>
       <a href="">
         <p class="text-white m-auto p-auto hover:text-cyan-300">Overview</p>
       </a>
@@ -157,7 +178,7 @@
       </a>
     </div>
     <div class="m-auto text-center min-[320px]:m-8">
-      <h5 class="text-cyan-100 text-center">Company</h5>
+      <h5 class="text-red-200 text-center">Company</h5>
       <a href="">
         <p class="text-white m-auto p-auto hover:text-cyan-300">About</p>
       </a>
@@ -175,7 +196,7 @@
       </a>
     </div>
     <div class="m-auto p-auto text-center min-[320px]:m-8">
-      <h5 class="text-cyan-100 text-center">Support</h5>
+      <h5 class="text-red-200 text-center">Support</h5>
       <a href="">
         <p class="text-white m-auto p-auto hover:text-cyan-300">Help Center</p>
       </a>
@@ -192,16 +213,20 @@
         <p class="text-white m-auto p-auto hover:text-cyan-300">Status</p>
       </a>
     </div>
+    <!-- Aqui cada imagen tiene una animacion, cada que se pasa el cursor por encima se translada sobre el eje y para hacer saber que es un enlace -->
     <div class="m-auto p-auto min-[320px]:m-8">
-      <h5 class="text-cyan-100 text-center">Follow us</h5>
+      <h5 class="text-red-200 text-center">Follow us</h5>
       <a href="https://twitter.com/ema_pulidoo" class="" target="_blank">
-        <img src="./assets/twitter.png" alt="Twitter" class="w-8 h-8 m-auto p-2 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110  duration-300">
+        <img src="./assets/twitter.png" alt="Twitter"
+          class="w-8 h-8 m-auto p-2 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110  duration-300">
       </a>
       <a href="https://www.instagram.com/_emanuel.pulido_/" target="_blank">
-        <img src="./assets/instagram.png" alt="Instagram" class="w-8 h-8 m-auto p-2 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110  duration-300">
+        <img src="./assets/instagram.png" alt="Instagram"
+          class="w-8 h-8 m-auto p-2 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110  duration-300">
       </a>
       <a href="https://www.linkedin.com/in/jos%C3%A9-emanuel-pulido-ortega-82baba1ab" target="_blank">
-        <img src="./assets/linkedin.png" alt="Linkedin" class="w-8 h-8 m-auto p-2 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110  duration-300">
+        <img src="./assets/linkedin.png" alt="Linkedin"
+          class="w-8 h-8 m-auto p-2 transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110  duration-300">
       </a>
     </div>
   </footer>
