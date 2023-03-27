@@ -1,5 +1,6 @@
 # proyect-time
-En este proyecto se creo un landingpage en el cual se aplicaron los conocimientos adquiridos durante este modulo del bootcamp
+En este proyecto se creo un landingpage en el cual se aplicaron los conocimientos adquiridos durante este modulo del bootcamp.
+Se creo un landing el cual simula ser un sitio de venta de relojes.
 
 ## Lenguajes y frameworks utilizados
 
